@@ -11,6 +11,8 @@
 |
 */
 
+use GrahamCampbell\Markdown\Facades\Markdown;
+
 Route::get('/', function () {
     return view('inicio');
 });
@@ -23,3 +25,13 @@ Route::get('/twitter', function()
 {
     return Twitter::postTweet(['status' => 'morelia', 'format' => 'json']);
 });
+
+
+Route::get('/sentimiento', function()
+{
+    return SentimentAnalysis::scores('The waiter was rude but the food was delicious');
+});
+
+
+Route::get('/readme/{user}/{repository}', ['as'=>'readme.index', 'uses' => 'ApiController@index']);
+

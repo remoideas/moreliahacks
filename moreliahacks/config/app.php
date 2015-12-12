@@ -145,6 +145,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'Thujohn\Twitter\TwitterServiceProvider',
+        'GrahamCampbell\Markdown\MarkdownServiceProvider',
+        'Yangqi\Htmldom\HtmldomServiceProvider',
+        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
+        'Antoineaugusti\LaravelSentimentAnalysis\LaravelSentimentAnalysisServiceProvider',
 
     ],
 
@@ -194,6 +198,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
+        'Markdown' => 'GrahamCampbell\Markdown\Facades\Markdown',
+        'cURL' => 'anlutro\cURL\Laravel\cURL',
+        'Htmldom' => 'Yangqi\Htmldom\Htmldom',
+        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+        'SentimentAnalysis' => 'Antoineaugusti\LaravelSentimentAnalysis\Facades\SentimentAnalysis'
 
     ],
 
