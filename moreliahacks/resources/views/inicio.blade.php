@@ -1,5 +1,9 @@
     @extends('template.wrapp')
 
+    @section('page-title')
+    APIs Registradas
+    @endsection
+
     @section('content')
 
     <!-- START MAIN -->
@@ -12,11 +16,10 @@
 
                 <!--start container-->
                 <div class="container">
-                    <h3>APIs Registradas</h3>
 
                 <div class="row">
 
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m6 l4">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">Nombre de la API</span>
@@ -29,7 +32,7 @@
                         </div>
                     </div>
 
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m6 l4">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">Nombre de la API</span>
@@ -42,7 +45,7 @@
                         </div>
                     </div>
 
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m6 l4">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">Nombre de la API</span>
@@ -55,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m6 l4">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">Nombre de la API</span>
@@ -68,7 +71,7 @@
                         </div>
                     </div>
 
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m6 l4">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">Nombre de la API</span>
@@ -81,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m6 l4">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">Nombre de la API</span>
