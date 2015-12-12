@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('inicio');
 });
+
+Route::get('/original', function () {
+    return view('inicio-original');
+});
