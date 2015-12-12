@@ -8,8 +8,6 @@
     Author URL: http://www.themeforest.net/user/geekslabs
 ================================================================================ -->
 
-
-<!-- Mirrored from demo.geekslabs.com/materialize/v2.1/layout03/index.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 12 Nov 2015 03:48:57 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">

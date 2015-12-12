@@ -36,7 +36,7 @@
     @endsection
     @section ('scripts')
         <!-- google map api -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
+    <script type="text/javascript" src="#"></script>
 
     <!--jvectormap-->
     <script type="text/javascript" src="{!! asset('layout03/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') !!}"></script>
