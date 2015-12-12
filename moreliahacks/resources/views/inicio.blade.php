@@ -1,5 +1,9 @@
     @extends('template.wrapp')
 
+    @section('page-title')
+    APIs Registradas
+    @endsection
+
     @section('content')
 
     <!-- START MAIN -->
@@ -13,10 +17,87 @@
                 <!--start container-->
                 <div class="container">
 
+                <div class="row">
 
+                    <div class="col s12 m6 l4">
+                      <div class="card orange darken-1">
+                          <div class="card-content orange">
+                            <span class="card-title">Nombre de la API</span>
+                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
+                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
+                          </div>
+                        </div>
+                    </div>
 
+                    <div class="col s12 m6 l4">
+                      <div class="card orange darken-1">
+                          <div class="card-content orange">
+                            <span class="card-title">Nombre de la API</span>
+                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
+                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
+                          </div>
+                        </div>
+                    </div>
 
+                    <div class="col s12 m6 l4">
+                      <div class="card orange darken-1">
+                          <div class="card-content orange">
+                            <span class="card-title">Nombre de la API</span>
+                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
+                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
+                          </div>
+                        </div>
+                    </div>
 
+                    <div class="col s12 m6 l4">
+                      <div class="card orange darken-1">
+                          <div class="card-content orange">
+                            <span class="card-title">Nombre de la API</span>
+                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
+                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                      <div class="card orange darken-1">
+                          <div class="card-content orange">
+                            <span class="card-title">Nombre de la API</span>
+                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
+                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                      <div class="card orange darken-1">
+                          <div class="card-content orange">
+                            <span class="card-title">Nombre de la API</span>
+                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
+                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
+                          </div>
+                        </div>
+                    </div>
+
+                </div> <!-- /row -->
 
 
                 </div>
@@ -35,31 +116,8 @@
 
     @endsection
     @section ('scripts')
-        <!-- google map api -->
-    <script type="text/javascript" src="#"></script>
-
-    <!--jvectormap-->
-    <script type="text/javascript" src="{!! asset('layout03/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') !!}"></script>
-    <script type="text/javascript" src="{!! asset('layout03/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js') !!}"></script>
-    <script type="text/javascript" src="{!! asset('layout03/js/plugins/jvectormap/vectormap-script.js') !!}"></script>
-
-
+    
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="{!! asset('layout03/js/plugins.js') !!}"></script>
-    <!-- Toast Notification -->
-    <script type="text/javascript">
-    // Toast Notification
-    $(window).load(function() {
-        setTimeout(function() {
-            Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
-        }, 1500);
-        setTimeout(function() {
-            Materialize.toast('<span>You can swipe me too!</span>', 3000);
-        }, 5000);
-        setTimeout(function() {
-            Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
-        }, 15000);
-    });
-
-    </script>
+    
     @endsection

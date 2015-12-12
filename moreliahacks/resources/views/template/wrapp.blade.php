@@ -43,6 +43,35 @@
     <link href="{!! asset('layout03/js/plugins/chartist-js/chartist.min.css') !!}" type="text/css" rel="stylesheet" media="screen,projection">
 
 
+
+    <!-- CSS para personalizar Materialize -->
+    <style>
+    @media (max-width: 992px) {
+        .logo-wrapper a {
+            left: 60px;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .logo-wrapper a img {
+            width: 90px;
+        }
+    }
+
+    @media (min-width: 601px) {
+        .logo-wrapper a img {
+            width: 105px;
+        }
+    }
+
+    #content {
+        margin-top: 0;
+    }
+
+    </style>
+
+
+
 </head>
 
 <body>
@@ -61,19 +90,20 @@
     <header id="header" class="page-topbar">
         <!-- start header nav-->
         <div class="navbar-fixed">
-            <nav class="cyan">
+            <nav class="light-blue">
                 <div class="nav-wrapper">
 
                     <ul class="left">
-                      <li class="no-hover"><a href="#" data-activates="slide-out" class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light cyan hide-on-large-only"><i class="mdi-navigation-menu" ></i></a></li>
-                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="{!! asset('layout03/images/materialize-logo.png') !!}" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
+                      <!-- <li class="no-hover"><a href="#" data-activates="slide-out" class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light cyan hide-on-large-only"><i class="mdi-navigation-menu" ></i></a></li> -->
+                      <li><h1 class="logo-wrapper"><a href="http://apis.moreliahacks.com" class="brand-logo darken-1"><img src="{!! asset('logo-morelia-hacks.png') !!}" alt="Morelia Hacks" style="margin-top: 5px;"></a> <span class="logo-text">Morelia Hacks</span></h1></li>
                     </ul>
-                    <div class="header-search-wrapper hide-on-med-and-down">
+                    <!-- <div class="header-search-wrapper hide-on-med-and-down">
                         <i class="mdi-action-search"></i>
-                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize"/>
-                    </div>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Buscar APIs"/>
+                    </div> -->
+                    <ul class="right">
+                        <li><a href="#">Colaboradores</a></li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen hide-on-small-only"><i class="mdi-action-settings-overscan"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -84,6 +114,30 @@
                 <!-- end header nav-->
     </header>
     <!-- END HEADER -->
+
+    <!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper" class=" grey lighten-3">
+            <!-- Search for small screen -->
+            <!-- <div class="header-search-wrapper grey hide-on-large-only">
+                <i class="mdi-action-search active"></i>
+                <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Buscar APIs">
+            </div> -->
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h3>APIs Registradas</h3>
+                <ol class="breadcrumb">
+                  <li><a href="index.html">Dashboard</a>
+                  </li>
+                  <li><a href="#">Pages</a>
+                  </li>
+                  <li class="active">Calendar</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--breadcrumbs end-->
 
     <!-- //////////////////////////////////////////////////////////////////////////// -->
 

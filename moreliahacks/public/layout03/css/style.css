@@ -733,7 +733,7 @@ h5.breadcrumbs-header {
 /*card-stats*/
 
 #card-stats .card-content {
-  text-align: center;
+  text-align: left;
 }
 #card-stats .card-stats-title, #card-stats .card-stats-title i {
   font-size: 1.2rem;
