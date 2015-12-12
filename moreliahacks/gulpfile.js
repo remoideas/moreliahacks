@@ -14,3 +14,7 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.sass('app.scss');
 });
+
+elixir(function(mix) {
+   mix.sass('app.scss').browserSync({proxy:'localhost:8888/moreliahacks/moreliahacks/public/'});
+});

@@ -43,6 +43,16 @@
     <link href="{!! asset('layout03/js/plugins/chartist-js/chartist.min.css') !!}" type="text/css" rel="stylesheet" media="screen,projection">
 
 
+
+    <!-- CSS para personalizar Materialize -->
+    <style>
+    .logo-wrapper a {
+    }
+
+    </style>
+
+
+
 </head>
 
 <body>
@@ -61,18 +71,18 @@
     <header id="header" class="page-topbar">
         <!-- start header nav-->
         <div class="navbar-fixed">
-            <nav class="cyan">
+            <nav class="light-blue">
                 <div class="nav-wrapper">
 
                     <ul class="left">
-                      <li class="no-hover"><a href="#" data-activates="slide-out" class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light cyan hide-on-large-only"><i class="mdi-navigation-menu" ></i></a></li>
-                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="{!! asset('layout03/images/materialize-logo.png') !!}" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
+                      <!-- <li class="no-hover"><a href="#" data-activates="slide-out" class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light cyan hide-on-large-only"><i class="mdi-navigation-menu" ></i></a></li> -->
+                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="{!! asset('logo-morelia-hacks.png') !!}" alt="Morelia Hacks" style="width:90px; margin-top: 5px;"></a> <span class="logo-text">Morelia Hacks</span></h1></li>
                     </ul>
-                    <div class="header-search-wrapper hide-on-med-and-down">
+                    <!-- <div class="header-search-wrapper hide-on-med-and-down">
                         <i class="mdi-action-search"></i>
                         <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize"/>
-                    </div>
-                    <ul class="right hide-on-med-and-down">
+                    </div> -->
+                    <ul class="right hide-on-small-only">
                         <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
                         </li>
                     </ul>
