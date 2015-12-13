@@ -102,12 +102,6 @@ var PieDoughnutChartSampleData = [
         color: "#46BFBD",
         highlight: "#5AD3D1",
         label: "Positivo"
-    },
-    {
-        value: {!! $sentimiento_twitter['neutral'] !!},
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Neutral"
     }
 ]
 
