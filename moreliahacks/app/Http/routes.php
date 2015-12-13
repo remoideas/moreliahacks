@@ -27,11 +27,13 @@ Route::get('/twitter', function()
 });
 
 
-Route::get('/sentimiento', function()
+Route::get('/sentimiento/{text}', function($text)
 {
-    return SentimentAnalysis::scores('The waiter was rude but the food was delicious');
+    return SentimentAnalysis::decision($text);
 });
 
 
 Route::get('/readme/{user}/{repository}', ['as'=>'readme.index', 'uses' => 'ApiController@index']);
 
+
+Route::resource('repositorio', 'RepositorioController');

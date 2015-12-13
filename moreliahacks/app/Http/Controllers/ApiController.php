@@ -44,6 +44,12 @@ class ApiController extends Controller
 
     }
 
+    public function gasto(){
+
+
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -149,6 +149,8 @@ return [
         'Yangqi\Htmldom\HtmldomServiceProvider',
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         'Antoineaugusti\LaravelSentimentAnalysis\LaravelSentimentAnalysisServiceProvider',
+        Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -202,7 +204,9 @@ return [
         'cURL' => 'anlutro\cURL\Laravel\cURL',
         'Htmldom' => 'Yangqi\Htmldom\Htmldom',
         'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
-        'SentimentAnalysis' => 'Antoineaugusti\LaravelSentimentAnalysis\Facades\SentimentAnalysis'
+        'SentimentAnalysis' => 'Antoineaugusti\LaravelSentimentAnalysis\Facades\SentimentAnalysis',
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
