@@ -68,6 +68,10 @@
         margin-top: 0;
     }
 
+    .card-action a:hover {
+        text-decoration: underline;
+    }
+
     </style>
 
 
