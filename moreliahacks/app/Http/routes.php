@@ -14,12 +14,13 @@
 use GrahamCampbell\Markdown\Facades\Markdown;
 
 Route::get('/', function () {
-    return view('inicio');
+    return view('apis');
 });
 
 Route::get('/original', function () {
     return view('inicio-original');
 });
+
 
 Route::get('/twitter', function()
 {
