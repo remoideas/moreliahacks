@@ -19,6 +19,20 @@
 
                 <div class="row">
 
+                    <div class="col s12 m12 l12">
+
+<a href="{{url('twitter/Morelia')}}" class="waves-effect waves-light btn-large "><i class="mdi-hardware-keyboard-alt left"></i>Así se siente <strong>Morelia</strong> en Twitter</a>
+
+<a href="{{url('twitter/MoreliaHacks')}}" class="waves-effect waves-light btn-large "><i class="mdi-hardware-keyboard-alt left"></i>Así se siente <strong>MoreliaHacks</strong> en Twitter</a>
+
+<div style="font-size:12px;">Tarda un poco en sacar las estadísticas en tiempo real</div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
                     @foreach($repositorios as $item)
 
                     <div class="col s12 m6 l4">
