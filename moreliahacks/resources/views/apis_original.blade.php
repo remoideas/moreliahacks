@@ -60,7 +60,26 @@
                 <div class="col s12 m8 l8">
                     <p>{{$repositorio->descripcion}}</p>
                 </div>
+                <div class="col s12 m4 l4">
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{!! asset('layout03/images/office.jpg') !!}" alt="office">
+                      </div>
+                      <div class="card-reveal">
 
+                      </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{!! asset('layout03/images/office.jpg') !!}" alt="office">
+                      </div>
+                      <div class="card-reveal">
+
+                      </div>
+                    </div>
+                </div>
                 </div>
 
                 <!--end container-->

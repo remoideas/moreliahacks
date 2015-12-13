@@ -138,9 +138,9 @@
               <div class="col s12 m12 l12">
                 <h3>@yield('page-title')</h3>
                 <ol class="breadcrumb">
-                  <li><a href="index.html">Inicio</a>
+                  <li><a href="{{url()}}">Inicio</a>
                   </li>
-                  <li><a href="#">API's</a>
+                  <li><a href="{{url()}}">API's</a>
                   </li>
                   <li class="active">Directorio</li>
                 </ol>

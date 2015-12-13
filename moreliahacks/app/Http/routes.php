@@ -40,3 +40,4 @@ Route::get('/', ['as'=>'home.index', 'uses' => 'RepositorioController@index']);
 Route::get('/admin', ['as'=>'home.index', 'uses' => 'RepositorioController@index_1']);
 
 Route::resource('repositorio', 'RepositorioController');
+

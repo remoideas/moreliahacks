@@ -29,7 +29,7 @@
                             <p class="grey-text text-darken-3"> Agregado el {{$item->fecha_publicacion}} <br />por {{$item->autores}}</p>
                           </div>
                           <div class="card-action">
-                            <a href="{{$item->link}}" class="lime-text text-accent-1">Ver Detalles</a>
+                            <a href="{{route('repositorio.show',$item->id )}}" class="lime-text text-accent-1">Ver Detalles</a>
                           </div>
                         </div>
                     </div>

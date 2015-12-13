@@ -73,7 +73,7 @@ class RepositorioController extends Controller
     {
         $repositorio = Repositorio::findOrFail($id);
 
-        return view('admin.repositorio.show', compact('repositorio'));
+        return view('apis', compact('repositorio'));
     }
 
     /**
