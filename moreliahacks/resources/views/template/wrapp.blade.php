@@ -72,6 +72,13 @@
         text-decoration: underline;
     }
 
+    .card .card-content .card-title {
+
+        line-height: 1em;
+        margin-bottom: 2em;
+
+    }
+
     </style>
 
 

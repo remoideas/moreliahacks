@@ -25,7 +25,7 @@
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">{{$item->nombre}}</span>
-                            <p style="margin-bottom: 1em; font-size: 1.2em;">{{$item->descripcion}}</p>
+                            <p style="margin-bottom: 1em; font-size: 1.2em; margin-top: 1em;">{{$item->descripcion}}</p>
                             <p class="grey-text text-darken-3"> Agregado el {{$item->fecha_publicacion}} <br />por {{$item->autores}}</p>
                           </div>
                           <div class="card-action">
