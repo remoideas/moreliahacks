@@ -1,5 +1,9 @@
     @extends('template.wrapp')
 
+    @section('page-title')
+    Puntuasión Sentimental
+    @endsection
+
     @section('content')
 
     <!-- START MAIN -->
@@ -39,7 +43,8 @@
                       <div class="row">
                         <div class="col s12">
                           <p class="collections-title">Creado por:</p>
-                          <p class="collections-content">MediTab</p>
+                          <p class="collections-content">Sebastián Osorio, Diego Jesus y Hugo Chanocua
+</p>
                         </div>
                       </div>
                     </li>
@@ -47,14 +52,15 @@
                       <div class="row">
                         <div class="col s12">
                           <p class="collections-title">Github</p>
-                          <p class="collections-content">http://github.com/algo/algo</p>
+                          <p class="collections-content">
+https://github.com/moreliahacks/api-sentimental-language</p>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </div>
                 <div class="col s12 m8 l8">
-                    <p>I am a very simple wall post. I am good at containing <a href="#">#small</a> bits of <a href="#">#information</a>.  I require little more information to use effectively.</p>
+                    <p>Permite obtener la puntuacion sentimental de una frase a través de una ruta get. Actualmente la aplicación realiza la puntuación sentimental mediante una cadena de texto en ingles, por lo cual el API hace la conversion de tu cadena de texto de español a ingles.</p>
                 </div>
                 <div class="col s12 m4 l4">
                   <div class="card">
