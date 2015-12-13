@@ -29,8 +29,8 @@ Route::get('/sentimiento/{text}', function($text)
     return SentimentAnalysis::decision($text);
 });
 
-Route::get('/perfil', function () {
-    return view('apis');
+Route::get('/colaboradores', function () {
+    return view('colaboradores');
 });
 
 //Route::get('/readme/{user}/{repository}', ['as'=>'readme.index', 'uses' => 'ApiController@index']);
