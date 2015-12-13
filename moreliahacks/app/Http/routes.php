@@ -23,7 +23,7 @@ Route::get('/twitter/{hashtag}', function($hashtag)
 
     $twitters = Twitter::getSearch(['q'=>$hashtag,'count' => 50]);
 
-    $sentimientos = [];
+    $sentimientos = ['negative', 'positive', 'neutral'];
 
     $twitters_array = $twitters->statuses;
 

@@ -24,7 +24,13 @@
                       <div class="sample-chart-wrapper">
                         <canvas id="pie-chart-sample" ></canvas>
                       </div>
-                      <p class="header center">Se siente Positivo / Neutral / Negativo</p>
+                      <p class="header center">Se siente Positivo ({{$sentimiento_twitter['positive']}}) / Neutral ({{$sentimiento_twitter['neutral']}}) / Negativo ({{$sentimiento_twitter['negative']}})</p>
+
+                    </div>
+
+                    <div class="col s12 m6 l6">
+
+                        <h2 style="padding-top: 160px;">Así se siente {{$hashtag}}</h2>
 
                     </div>
 
@@ -32,7 +38,7 @@
 
                 <hr>
 
-                <h2>Estadisticas segun los 50 últimos twitters</h2>
+                <h3>Estadisticas segun los 50 últimos twitters</h3>
 
                 <div class="row">
 
