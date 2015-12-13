@@ -207,6 +207,7 @@ return [
         'SentimentAnalysis' => 'Antoineaugusti\LaravelSentimentAnalysis\Facades\SentimentAnalysis',
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'TranslateClient' => Stichoza\GoogleTranslate\TranslateClient::class,
 
     ],
 

@@ -15,7 +15,8 @@
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "antoineaugusti/laravel-sentiment-analysis": "~2.0",
         "appzcoder/crud-generator": "^1.0",
-        "laravelcollective/html": "5.1.*"
+        "laravelcollective/html": "5.1.*",
+        "stichoza/google-translate-php": "^3.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -18,15 +18,38 @@ Route::get('/original', function () {
     return view('inicio-original');
 });
 
-Route::get('/twitter', function()
+Route::get('/twitter/{hashtag}', function($hashtag)
 {
-    return Twitter::postTweet(['status' => 'morelia', 'format' => 'json']);
+
+    $twitters = Twitter::getSearch(['q'=>$hashtag,'count' => 50]);
+
+    $sentimientos = [];
+
+    $twitters_array = $twitters->statuses;
+
+    foreach ($twitters_array as $twitter) {
+
+        $traduccion = TranslateClient::translate('es', 'en', $twitter->text);
+
+        $sentimiento =  SentimentAnalysis::decision($traduccion);
+
+        $sentimientos[] = $sentimiento;
+
+    }
+
+    $sentimiento_twitter = array_count_values($sentimientos);
+
+    return view('twitter', compact('sentimiento_twitter', 'twitters_array', 'hashtag'));
+
 });
 
 
 Route::get('/sentimiento/{text}', function($text)
 {
-    return SentimentAnalysis::decision($text);
+
+    $traduccion = TranslateClient::translate('es', 'en', $text);
+
+    return SentimentAnalysis::decision($traduccion);
 });
 
 Route::get('/colaboradores', function () {
