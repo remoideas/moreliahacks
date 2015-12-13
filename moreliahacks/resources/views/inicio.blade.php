@@ -19,83 +19,24 @@
 
                 <div class="row">
 
-                    <div class="col s12 m6 l4">
-                      <div class="card orange darken-1">
-                          <div class="card-content orange">
-                            <span class="card-title">Nombre de la API</span>
-                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
-                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
-                          </div>
-                        </div>
-                    </div>
+                    @foreach($repositorios as $item)
 
                     <div class="col s12 m6 l4">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
-                            <span class="card-title">Nombre de la API</span>
-                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
-                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
+                            <span class="card-title">{{$item->nombre}}</span>
+                            <p style="margin-bottom: 1em; font-size: 1.2em;">{{$item->descripcion}}</p>
+                            <p class="grey-text text-darken-3"> Agregado el {{$item->fecha_publicacion}} <br />por {{$item->autores}}</p>
                           </div>
                           <div class="card-action">
-                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
+                            <a href="{{$item->link}}" class="lime-text text-accent-1">Ver Detalles</a>
                           </div>
                         </div>
                     </div>
 
-                    <div class="col s12 m6 l4">
-                      <div class="card orange darken-1">
-                          <div class="card-content orange">
-                            <span class="card-title">Nombre de la API</span>
-                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
-                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
-                          </div>
-                        </div>
-                    </div>
+                    @endforeach
 
-                    <div class="col s12 m6 l4">
-                      <div class="card orange darken-1">
-                          <div class="card-content orange">
-                            <span class="card-title">Nombre de la API</span>
-                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
-                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
-                          </div>
-                        </div>
-                    </div>
 
-                    <div class="col s12 m6 l4">
-                      <div class="card orange darken-1">
-                          <div class="card-content orange">
-                            <span class="card-title">Nombre de la API</span>
-                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
-                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l4">
-                      <div class="card orange darken-1">
-                          <div class="card-content orange">
-                            <span class="card-title">Nombre de la API</span>
-                            <p style="margin-bottom: 1em; font-size: 1.2em;">Define si un bloque de texto tiene sentimiento positivo o negativo. </p>
-                            <p class="grey-text text-darken-3"> Agregado el 12/Diciembre/2015 <br />por Jose Dominguez y Juan Lopez</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#" class="lime-text text-accent-1">Ver Detalles</a>
-                          </div>
-                        </div>
-                    </div>
 
                 </div> <!-- /row -->
 
@@ -116,8 +57,8 @@
 
     @endsection
     @section ('scripts')
-    
+
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="{!! asset('layout03/js/plugins.js') !!}"></script>
-    
+
     @endsection

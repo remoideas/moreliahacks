@@ -51,7 +51,7 @@
             left: 60px;
         }
     }
-    
+
     @media (max-width: 600px) {
         .logo-wrapper a img {
             width: 90px;
@@ -131,11 +131,11 @@
               <div class="col s12 m12 l12">
                 <h3>@yield('page-title')</h3>
                 <ol class="breadcrumb">
-                  <li><a href="index.html">Dashboard</a>
+                  <li><a href="index.html">Inicio</a>
                   </li>
-                  <li><a href="#">Pages</a>
+                  <li><a href="#">API's</a>
                   </li>
-                  <li class="active">Calendar</li>
+                  <li class="active">Directorio</li>
                 </ol>
               </div>
             </div>

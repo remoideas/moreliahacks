@@ -13,9 +13,6 @@
 
 use GrahamCampbell\Markdown\Facades\Markdown;
 
-Route::get('/', function () {
-    return view('inicio');
-});
 
 Route::get('/original', function () {
     return view('inicio-original');
@@ -33,7 +30,8 @@ Route::get('/sentimiento/{text}', function($text)
 });
 
 
-Route::get('/readme/{user}/{repository}', ['as'=>'readme.index', 'uses' => 'ApiController@index']);
+//Route::get('/readme/{user}/{repository}', ['as'=>'readme.index', 'uses' => 'ApiController@index']);
 
+Route::get('/', ['as'=>'home.index', 'uses' => 'RepositorioController@index']);
 
 Route::resource('repositorio', 'RepositorioController');

@@ -22,7 +22,7 @@ class RepositorioController extends Controller
     {
         $repositorios = Repositorio::paginate(15);
 
-        return view('admin.repositorio.index', compact('repositorios'));
+        return view('inicio', compact('repositorios'));
     }
 
     /**
@@ -42,7 +42,7 @@ class RepositorioController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         Repositorio::create($request->all());
 
         Session::flash('flash_message', 'Repositorio successfully added!');
@@ -84,7 +84,7 @@ class RepositorioController extends Controller
      */
     public function update($id, Request $request)
     {
-        
+
         $repositorio = Repositorio::findOrFail($id);
         $repositorio->update($request->all());
 
