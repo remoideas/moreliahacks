@@ -51,7 +51,7 @@
                       <div class="row">
                         <div class="col s12">
                           <p class="collections-title">Github</p>
-                          <p class="collections-content">{{$repositorio->link}}</p>
+                          <p class="collections-content"><a href="{{$repositorio->link}}">{{$repositorio->link}}</a></p>
                         </div>
                       </div>
                     </li>
