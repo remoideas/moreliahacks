@@ -18,6 +18,19 @@ class RepositorioController extends Controller
      *
      * @return Response
      */
+    public function index_1()
+    {
+        $repositorios = Repositorio::paginate(15);
+
+        return view('admin.repositorio.index', compact('repositorios'));
+    }
+
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
     public function index()
     {
         $repositorios = Repositorio::paginate(15);
