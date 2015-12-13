@@ -38,7 +38,7 @@
 
                 <hr>
 
-                <h3>Estadisticas segun los 50 últimos twitters</h3>
+                <h3>Estadisticas según los 50 últimos twitters</h3>
 
                 <div class="row">
 
