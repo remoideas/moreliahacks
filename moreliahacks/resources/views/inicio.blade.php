@@ -18,25 +18,19 @@
                 <div class="container">
 
 
-                <h3>Estadisticas segun los 50 últimos twitters</h3>
+                                    <div class="row">
 
-                <div class="row">
+                    <div class="col s12 m12 l12">
 
-                    @foreach($twitters_array as $item)
+<a href="{{url('twitter/Morelia')}}" class="waves-effect waves-light btn-large "><i class="mdi-hardware-keyboard-alt left"></i>Así se siente <strong>Morelia</strong> en Twitter</a>
 
-                    <div class="col s12 m6 l4">
-                      <div class="card orange darken-1">
-                          <div class="card-content orange">
-                            <p style="margin-bottom: 1em; font-size: 1.2em; margin-top: 1em;">{{$item->text}}</p>
-                          </div>
-                        </div>
+<a href="{{url('twitter/MoreliaHacks')}}" class="waves-effect waves-light btn-large "><i class="mdi-hardware-keyboard-alt left"></i>Así se siente <strong>MoreliaHacks</strong> en Twitter</a>
+
+<div style="font-size:12px;">Tarda un poco en sacar las estadísticas en tiempo real</div>
+
                     </div>
 
-                    @endforeach
-
-
-
-                </div> <!-- /row -->
+                </div>
 
 
                 <div class="row">
