@@ -62,7 +62,7 @@
                 </div>
                 <!--end container-->
 
-                <h6>Autor: Antonio Reyes Montufar</h6>
+                <h6>Autor: Antonio Reyes Montufar, Juan Adrian Garcia Cid, Julio Cesar Ortega Contreras, Abraham Joel Alvarez Garcia</h6>
 
             </section>
             <!-- END CONTENT -->
