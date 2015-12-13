@@ -129,7 +129,7 @@
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h3>APIs Registradas</h3>
+                <h3>@yield('page-title')</h3>
                 <ol class="breadcrumb">
                   <li><a href="index.html">Dashboard</a>
                   </li>
