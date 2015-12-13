@@ -113,7 +113,7 @@
                         <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Buscar APIs"/>
                     </div> -->
                     <ul class="right">
-                        <li><a href="#">Colaboradores</a></li>
+                        <li><a href="{{url('colaboradores')}}">Colaboradores</a></li>
                         <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen hide-on-small-only"><i class="mdi-action-settings-overscan"></i></a>
                         </li>
                     </ul>
