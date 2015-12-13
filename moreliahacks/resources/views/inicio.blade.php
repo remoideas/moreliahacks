@@ -18,6 +18,27 @@
                 <div class="container">
 
 
+                <h3>Estadisticas segun los 50 últimos twitters</h3>
+
+                <div class="row">
+
+                    @foreach($twitters_array as $item)
+
+                    <div class="col s12 m6 l4">
+                      <div class="card orange darken-1">
+                          <div class="card-content orange">
+                            <p style="margin-bottom: 1em; font-size: 1.2em; margin-top: 1em;">{{$item->text}}</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    @endforeach
+
+
+
+                </div> <!-- /row -->
+
+
                 <div class="row">
 
                     @foreach($repositorios as $item)
