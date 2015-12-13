@@ -106,7 +106,7 @@
 
                     <ul class="left">
                       <!-- <li class="no-hover"><a href="#" data-activates="slide-out" class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light cyan hide-on-large-only"><i class="mdi-navigation-menu" ></i></a></li> -->
-                      <li><h1 class="logo-wrapper"><a href="http://apis.moreliahacks.com" class="brand-logo darken-1"><img src="{!! asset('logo-morelia-hacks.png') !!}" alt="Morelia Hacks" style="margin-top: 5px;"></a> <span class="logo-text">Morelia Hacks</span></h1></li>
+                      <li><h1 class="logo-wrapper"><a href="{{url()}}" class="brand-logo darken-1"><img src="{!! asset('logo-morelia-hacks.png') !!}" alt="Morelia Hacks" style="margin-top: 5px;"></a> <span class="logo-text">Morelia Hacks</span></h1></li>
                     </ul>
                     <!-- <div class="header-search-wrapper hide-on-med-and-down">
                         <i class="mdi-action-search"></i>
