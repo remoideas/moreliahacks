@@ -1,7 +1,7 @@
     @extends('template.wrapp')
 
     @section('page-title')
-    Puntuasión Sentimental
+    Puntuación Sentimental
     @endsection
 
     @section('content')
