@@ -24,10 +24,42 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content  red white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> DEFAULT </p>
-                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> juanadrian@iCloud.com</span></p>
-                                        <p class="card-stats-compare"><a href="https://www.fb.com/JuanAdrianMx" class="brand-logo darken-1"><img src="{!! asset('layout03/images/facebook.png') !!}" alt="facebook"></a><span class="logo-text"> /JuanAdrianMx</span></p>
-                                        <p class="card-stats-compare"><a href="https://mx.linkedin.com/in/juanadrian" class="brand-logo darken-1"><img src="{!! asset('layout03/images/linkedin.png') !!}" alt="linkedin"></a><span class="logo-text"> /juanadrian</span></p>
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Ivan Rosas Rivera </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  red white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Javier Silva Sanchez </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  red white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Jair Albarran Laguna </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  red white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Julio Cesar Mendoza Ramirez </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  red white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Cristian Ramirez Rosasas </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  red white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Jorge Luis Huerta Moreno </p>
                                     </div>
                                 </div>
                             </div>
@@ -38,10 +70,14 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content deep-purple white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> DEFAULT </p>
-                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> juanadrian@iCloud.com</span></p>
-                                        <p class="card-stats-compare"><a href="https://www.fb.com/JuanAdrianMx" class="brand-logo darken-1"><img src="{!! asset('layout03/images/facebook.png') !!}" alt="facebook"></a><span class="logo-text"> /JuanAdrianMx</span></p>
-                                        <p class="card-stats-compare"><a href="https://mx.linkedin.com/in/juanadrian" class="brand-logo darken-1"><img src="{!! asset('layout03/images/linkedin.png') !!}" alt="linkedin"></a><span class="logo-text"> /juanadrian</span></p>
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Miguel Angel Cedeño Garcidueñas </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content deep-purple white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i>  Jesse William Madriz </p>
                                     </div>
                                 </div>
                             </div>
@@ -52,6 +88,7 @@
                                 <div class="card">
                                     <div class="card-content  blue white-text">
                                         <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Francisco Javier Ferreyra López </p>
+                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> pacofigo@outlook.com</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -59,6 +96,7 @@
                                 <div class="card">
                                     <div class="card-content  blue white-text">
                                         <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Ricardo Zamora Jacobo </p>
+                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> rica_zamora@hotmail.com</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -89,6 +127,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  light-green white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Diego Jesus Sanchez Del Val</p>
+                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> loki_loki_loki91@hotmail.com </span></p>
+                                    </div>
+                                </div>
+                            </div>
                 </div>
                 
                 <h4 class="header">Visualizacion de datos</h4>
@@ -114,20 +160,14 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content  amber white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> DEFAULT </p>
-                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> juanadrian@iCloud.com</span></p>
-                                        <p class="card-stats-compare"><a href="https://www.fb.com/JuanAdrianMx" class="brand-logo darken-1"><img src="{!! asset('layout03/images/facebook.png') !!}" alt="facebook"></a><span class="logo-text"> /JuanAdrianMx</span></p>
-                                        <p class="card-stats-compare"><a href="https://mx.linkedin.com/in/juanadrian" class="brand-logo darken-1"><img src="{!! asset('layout03/images/linkedin.png') !!}" alt="linkedin"></a><span class="logo-text"> /juanadrian</span></p>
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Antonio Reyes Montufa </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content  amber white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> DEFAULT </p>
-                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> juanadrian@iCloud.com</span></p>
-                                        <p class="card-stats-compare"><a href="https://www.fb.com/JuanAdrianMx" class="brand-logo darken-1"><img src="{!! asset('layout03/images/facebook.png') !!}" alt="facebook"></a><span class="logo-text"> /JuanAdrianMx</span></p>
-                                        <p class="card-stats-compare"><a href="https://mx.linkedin.com/in/juanadrian" class="brand-logo darken-1"><img src="{!! asset('layout03/images/linkedin.png') !!}" alt="linkedin"></a><span class="logo-text"> /juanadrian</span></p>
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Abraham Joel Alvarez Garcia </p>
                                     </div>
                                 </div>
                             </div>
@@ -152,10 +192,15 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content deep-orange white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> DEFAULT </p>
-                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> juanadrian@iCloud.com</span></p>
-                                        <p class="card-stats-compare"><a href="https://www.fb.com/JuanAdrianMx" class="brand-logo darken-1"><img src="{!! asset('layout03/images/facebook.png') !!}" alt="facebook"></a><span class="logo-text"> /JuanAdrianMx</span></p>
-                                        <p class="card-stats-compare"><a href="https://mx.linkedin.com/in/juanadrian" class="brand-logo darken-1"><img src="{!! asset('layout03/images/linkedin.png') !!}" alt="linkedin"></a><span class="logo-text"> /juanadrian</span></p>
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Adrian Sandoval Arvizu  </p>
+                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> adrian.arvizu"gmail.com</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content deep-orange white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Ma. Guadalupe Chavez Torres </p>
                                     </div>
                                 </div>
                             </div>
@@ -166,10 +211,21 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content  brown white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> DEFAULT </p>
-                                        <p class="card-stats-compare"><img src="{!! asset('layout03/images/gmail.png') !!}" alt="correo"><span class="logo-text"> juanadrian@iCloud.com</span></p>
-                                        <p class="card-stats-compare"><a href="https://www.fb.com/JuanAdrianMx" class="brand-logo darken-1"><img src="{!! asset('layout03/images/facebook.png') !!}" alt="facebook"></a><span class="logo-text"> /JuanAdrianMx</span></p>
-                                        <p class="card-stats-compare"><a href="https://mx.linkedin.com/in/juanadrian" class="brand-logo darken-1"><img src="{!! asset('layout03/images/linkedin.png') !!}" alt="linkedin"></a><span class="logo-text"> /juanadrian</span></p>
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Gerardo Bautista Maldonado </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  brown white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Carlos Ivan Nicolas Ramos </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  brown white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-perm-identity"></i> Rodolfo Humberto Cedeño Castrellon </p>
                                     </div>
                                 </div>
                             </div>
