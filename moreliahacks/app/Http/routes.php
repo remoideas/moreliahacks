@@ -29,11 +29,27 @@ Route::get('/twitter/{hashtag}', function($hashtag)
 
     foreach ($twitters_array as $twitter) {
 
-        $traduccion = TranslateClient::translate('es', 'en', $twitter->text);
+        //$traduccion = TranslateClient::translate('es', 'en', $twitter->text);
 
-        $sentimiento =  SentimentAnalysis::decision($traduccion);
+        //$sentimiento =  SentimentAnalysis::decision($traduccion);
 
-        $sentimientos[] = $sentimiento;
+        $json = file_get_contents('https://sentimental-language.herokuapp.com/translate?text=' . urlencode($twitter->text));
+        $obj = json_decode($json);
+
+        if( $obj->data->score == 0 ){
+
+            $sentimientos[] = 'neutral';
+
+        } elseif( $obj->data->score < 0 ){
+
+            $sentimientos[] = 'negative';
+
+        } elseif( $obj->data->score > 0 ){
+
+            $sentimientos[] = 'positive';
+
+        }
+
 
     }
 
