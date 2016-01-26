@@ -37,7 +37,7 @@
 
                     @foreach($repositorios as $item)
 
-                    <div class="col s12 m6 l4">
+                    <div class="col s12 m12 l6 offset-m3 offset-l3">
                       <div class="card orange darken-1">
                           <div class="card-content orange">
                             <span class="card-title">{{$item->nombre}}</span>
