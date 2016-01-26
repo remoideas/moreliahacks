@@ -45,7 +45,7 @@
                     @foreach($twitters_array as $item)
 
                     <div class="col s12 m6 l4">
-                      <div class="card orange darken-1">
+                      <div class="card orange {{$item->sentimiento}} darken-1">
                           <div class="card-content orange">
                             <p style="margin-bottom: 1em; font-size: 1.2em; margin-top: 1em;">{{$item->text}}</p>
                           </div>
@@ -62,7 +62,6 @@
                 </div>
                 <!--end container-->
 
-                <h6>Autor: Antonio Reyes Montufar, Juan Adrian Garcia Cid, Julio Cesar Ortega Contreras, Abraham Joel Alvarez Garcia</h6>
 
             </section>
             <!-- END CONTENT -->

@@ -18,26 +18,41 @@ Route::get('/original', function () {
     return view('inicio-original');
 });
 
-Route::get('/translate', function () {
-    $response = Laracurl::get('https://www.googleapis.com/language/translate/v2?q=HELLO&target=es&source=en&key=AIzaSyCYYNvP_GnR6RW8U6btkG9phbJD4Lcd1MQ');
-    dump($response);
+Route::get('/translate/{word}', function ($word) {
+
 });
 
 Route::get('/twitter/{hashtag}', function($hashtag)
 {
 
+    if ( !Cache::has('sentimiento_twitter') ) {
+
+
     $twitters = Twitter::getSearch(['q'=>$hashtag,'count' => 50]);
 
-    $sentimientos = ['negative', 'positive', 'neutral'];
+    //$sentimientos = ['negative', 'positive', 'neutral'];
+    $sentimientos = [];
 
     $twitters_array = $twitters->statuses;
 
-    foreach ($twitters_array as $twitter) {
+    foreach ($twitters_array as $key => $twitter) {
 
         //$traduccion = TranslateClient::translate('es', 'en', $twitter->text);
 
-        //$sentimiento =  SentimentAnalysis::decision($traduccion);
+        $url = Laracurl::buildUrl('https://www.googleapis.com/language/translate/v2', [
+        'q' => $twitter->text,
+        'target' => 'en',
+        'source' => 'es',
+        'key' => 'AIzaSyCYYNvP_GnR6RW8U6btkG9phbJD4Lcd1MQ'
+        ]);
+        $response = json_decode( Laracurl::get($url) );
+        $traduccion = $response->data->translations[0]->translatedText;
 
+        $sentimientos[$key] =  SentimentAnalysis::decision($traduccion);
+
+        $twitters_array[$key]->sentimiento = $sentimientos[$key];
+
+        /*
         $json = file_get_contents('https://sentimental-language.herokuapp.com/translate?text=' . urlencode($twitter->text));
         $obj = json_decode($json);
 
@@ -54,11 +69,24 @@ Route::get('/twitter/{hashtag}', function($hashtag)
             $sentimientos[] = 'positive';
 
         }
-
+        */
 
     }
 
     $sentimiento_twitter = array_count_values($sentimientos);
+
+    Cache::put('sentimiento_twitter', $sentimiento_twitter, 360);
+    Cache::put('twitters_array', $twitters_array, 360);
+    Cache::put('hashtag', $hashtag, 360);
+
+            //
+    }
+
+
+    $sentimiento_twitter = Cache::get('sentimiento_twitter');
+    $twitters_array = Cache::get('twitters_array');
+    $hashtag = Cache::get('hashtag');
+
 
     return view('twitter', compact('sentimiento_twitter', 'twitters_array', 'hashtag'));
 
