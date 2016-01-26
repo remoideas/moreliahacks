@@ -25,7 +25,7 @@ Route::get('/translate/{word}', function ($word) {
 Route::get('/twitter/{hashtag}', function($hashtag)
 {
 
-    if ( !Cache::has('sentimiento_twitter') ) {
+    if ( !Cache::has('sentimiento_twitter_'.$hashtag) ) {
 
 
     $twitters = Twitter::getSearch(['q'=>$hashtag,'count' => 50]);
@@ -75,17 +75,17 @@ Route::get('/twitter/{hashtag}', function($hashtag)
 
     $sentimiento_twitter = array_count_values($sentimientos);
 
-    Cache::put('sentimiento_twitter', $sentimiento_twitter, 360);
-    Cache::put('twitters_array', $twitters_array, 360);
-    Cache::put('hashtag', $hashtag, 360);
+    Cache::put('sentimiento_twitter_'.$hashtag, $sentimiento_twitter, 360);
+    Cache::put('twitters_array_'.$hashtag, $twitters_array, 360);
+    Cache::put('hashtag_'.$hashtag, $hashtag, 360);
 
             //
     }
 
 
-    $sentimiento_twitter = Cache::get('sentimiento_twitter');
-    $twitters_array = Cache::get('twitters_array');
-    $hashtag = Cache::get('hashtag');
+    $sentimiento_twitter = Cache::get('sentimiento_twitter_'.$hashtag);
+    $twitters_array = Cache::get('twitters_array_'.$hashtag);
+    $hashtag = Cache::get('hashtag_'.$hashtag);
 
 
     return view('twitter', compact('sentimiento_twitter', 'twitters_array', 'hashtag'));
