@@ -151,6 +151,7 @@ return [
         'Antoineaugusti\LaravelSentimentAnalysis\LaravelSentimentAnalysisServiceProvider',
         Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        'Zjango\Laracurl\LaracurlServiceProvider'
 
     ],
 
@@ -208,6 +209,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'TranslateClient' => Stichoza\GoogleTranslate\TranslateClient::class,
+        'Laracurl'  =>  'Zjango\Laracurl\Facades\Laracurl'
 
     ],
 

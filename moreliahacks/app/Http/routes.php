@@ -18,6 +18,11 @@ Route::get('/original', function () {
     return view('inicio-original');
 });
 
+Route::get('/translate', function () {
+    $response = Laracurl::get('https://www.googleapis.com/language/translate/v2?q=HELLO&target=es&source=en&key=AIzaSyCYYNvP_GnR6RW8U6btkG9phbJD4Lcd1MQ');
+    dump($response);
+});
+
 Route::get('/twitter/{hashtag}', function($hashtag)
 {
 
